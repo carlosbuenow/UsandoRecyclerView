@@ -21,7 +21,7 @@ public class AdapterTimes extends RecyclerView.Adapter<AdapterTimes.ViewHolder> 
     private Context context;
     private List<Times> lstTimes;
 
-    public AdapterTimes(Context, context, List<Times> lstTimes) {
+    public AdapterTimes(Context context, List<Times> lstTimes) {
 
         this.context = context;
         this.lstTimes = lstTimes;
@@ -29,7 +29,7 @@ public class AdapterTimes extends RecyclerView.Adapter<AdapterTimes.ViewHolder> 
     }
 
     @NonNull
-
+    @Override
 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
@@ -41,12 +41,14 @@ public class AdapterTimes extends RecyclerView.Adapter<AdapterTimes.ViewHolder> 
         return new ViewHolder(view);
     }
 
-
+    @Override
 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position){
         holder.modeloTituloFutebol.setText(lstTimes.get(position).getNome());
         holder.modeloImgFutebol.setImageResource(lstTimes.get(position).getImagemTime());
     }
+
+    @Override
 
     public int getItemCount(){
         return lstTimes.size();
