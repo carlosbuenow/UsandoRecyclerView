@@ -46,6 +46,9 @@ public class AdapterTimes extends RecyclerView.Adapter<AdapterTimes.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position){
         holder.modeloTituloFutebol.setText(lstTimes.get(position).getNome());
         holder.modeloImgFutebol.setImageResource(lstTimes.get(position).getImagemTime());
+        holder.modeloDescricaoFutebol.setText(lstTimes.get(position).getLiga());
+        holder.modeloImgCopaFutebol.setImageResource(lstTimes.get(position).getImagemCopa());
+        holder.modeloTituloCopa.setText(lstTimes.get(position).getCopas());
     }
 
     @Override
@@ -58,11 +61,20 @@ public class AdapterTimes extends RecyclerView.Adapter<AdapterTimes.ViewHolder> 
         CardView modeloCardFutebol;
         ImageView modeloImgFutebol;
         TextView modeloTituloFutebol;
+
+        TextView modeloDescricaoFutebol;
+
+        ImageView modeloImgCopaFutebol;
+
+        TextView modeloTituloCopa;
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             modeloTituloFutebol = itemView.findViewById(R.id.modeloTituloFutebol);
             modeloImgFutebol = itemView.findViewById(R.id.modeloImgFutebol);
             modeloCardFutebol = itemView.findViewById(R.id.modeloCardFutebol);
+            modeloDescricaoFutebol = itemView.findViewById(R.id.modeloDescricaoFutebol);
+            modeloImgCopaFutebol = itemView.findViewById(R.id.modeloImgCopaFutebol);
+            modeloTituloCopa = itemView.findViewById(R.id.modeloTituloCopa);
         }
     }
 }

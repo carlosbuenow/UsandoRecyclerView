@@ -5,14 +5,17 @@ public class Times {
     private String nome;
     private String liga;
     private int imagemTime;
-    private double valorElenco;
+    private int imagemCopa;
 
-    public Times(String nome, String liga, int imagemTime, double valorElenco){
+    private String copas;
+
+    public Times(String nome, String liga, int imagemTime, int imagemCopa, String copas) {
 
         this.nome = nome;
         this.liga = liga;
         this.imagemTime = imagemTime;
-        this.valorElenco = valorElenco;
+        this.imagemCopa = imagemCopa;
+        this.copas = copas;
 
     }
 
@@ -40,12 +43,22 @@ public class Times {
         this.imagemTime = imagemTime;
     }
 
-    public double getValorElenco() {
-        return valorElenco;
+    public int getImagemCopa() {
+        return imagemCopa;
     }
 
-    public void setValorElenco(double valorElenco) {
-        this.valorElenco = valorElenco;
+    public void setImagemCopa(int imagemCopa) {
+        this.imagemCopa = imagemCopa;
+    }
+
+    public String getCopas() {
+        return copas;
+    }
+
+    public void setCopas(String copas) {
+        this.copas = copas;
     }
 }
+
+
 

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/modeloCardFutebol"
     android:layout_width="match_parent"
-    app:cardCornerRadius="7dp"
+    android:layout_height="300dp"
     android:layout_margin="5dp"
     android:orientation="vertical"
-    android:layout_height="300dp">
+    app:cardCornerRadius="7dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,12 +37,37 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/modeloDescricaoFutebol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textSize="18sp"
-                android:text="A seleção mais vitoriosa da história das copas, nunca ficou de fora de nenhuma copa do mundo"
                 android:layout_margin="10dp"
+                android:text="A seleção mais vitoriosa da história das copas, nunca ficou de fora de nenhuma copa do mundo."
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/modeloImgCopaFutebol"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="#2c2c2c" />
+
+                <TextView
+                    android:id="@+id/modeloTituloCopa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="Copas"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
 
         </LinearLayout>
