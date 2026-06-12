@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
         lstTimes = new ArrayList<>();
 
+        lstTimes.add(new Times("Brasil", "Seleção mais vitoriosa da história das copas, nunca ficou de fora de nenhuma copa do mundo.", R.drawable.brasil, R.drawable.copasemfundo, "5 Copas"));
+        lstTimes.add(new Times("Espanha", "Uma seleção forte atualmente, vencedora da última edição da Eurocopa (2024). ", R.drawable.espanha, R.drawable.copasemfundo, "1 Copa"));
+        lstTimes.add(new Times("França", "É a mais favorita atualmente, campeã da copa de 2018 e vice-campeã na de 2022.", R.drawable.franca, R.drawable.copasemfundo, "2 Copas"));
+        lstTimes.add(new Times("Argentina", "A última campeã da copa do mundo (2022) e vencedora da última Copa América (2024).", R.drawable.argentina, R.drawable.copasemfundo, "3 Copas"));
+
         AdapterTimes adapterTimes = new AdapterTimes(getApplicationContext(), lstTimes);
         idTimeFutebol.setLayoutManager(new GridLayoutManager(getApplicationContext(), 1));
         idTimeFutebol.setAdapter(adapterTimes);

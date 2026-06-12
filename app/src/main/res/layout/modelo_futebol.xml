@@ -4,10 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/modeloCardFutebol"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:layout_margin="5dp"
+    android:layout_height="250dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
     android:orientation="vertical"
-    app:cardCornerRadius="7dp">
+    app:cardCornerRadius="7dp"
+    app:cardBackgroundColor="#ffffff">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:text="A seleção mais vitoriosa da história das copas, nunca ficou de fora de nenhuma copa do mundo."
+                android:text="Texto"
                 android:textSize="18sp" />
 
             <LinearLayout
